@@ -1,0 +1,21 @@
+*Use profile service Eureka client*
+
+User profile service is a Eureka client that registers with the Eureka server and gets automatically registered with Zuul api gateway.
+
+*How to build?*
+
+_Without tests_
+
+`>./gradlew clean build -x test`
+
+_With tests_
+
+`>./gradlew clean build`
+
+*How to run?*
+
+`>./gradlew bootRun -Pargs=--server.port=8088`
+
+or
+
+`>java -Dserver.port=8088 -jar ./build/libs/user-profile-service-0.0.1-SNAPSHOT.jar`
